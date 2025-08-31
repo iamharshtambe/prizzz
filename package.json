@@ -19,6 +19,7 @@
   "homepage": "https://github.com/iamharshtambe/job-prism#readme",
   "description": "",
   "dependencies": {
+    "prisma": "^6.15.0",
     "typescript": "^5.9.2"
   }
 }
