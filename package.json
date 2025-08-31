@@ -1,0 +1,24 @@
+{
+  "name": "prizzz",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc -b && node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamharshtambe/job-prism.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamharshtambe/job-prism/issues"
+  },
+  "homepage": "https://github.com/iamharshtambe/job-prism#readme",
+  "description": "",
+  "dependencies": {
+    "typescript": "^5.9.2"
+  }
+}
