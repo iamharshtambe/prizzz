@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    /* File structure */
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* Language & module system */
+    "target": "ES2020", // modern JS output
+    "module": "CommonJS", // required for Node.js (not nodenext)
+    "esModuleInterop": true, // allows 'import express from "express"'
+    "moduleResolution": "node", // Node-style module resolution
+
+    /* Type checking */
+    "strict": true, // enable all strict checks
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    /* Node environment */
+    "lib": ["ES2020"], // standard library
+
+    /* Debugging */
+    "sourceMap": true // allow debugging TS in Node
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
