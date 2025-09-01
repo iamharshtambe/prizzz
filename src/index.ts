@@ -1,10 +1,10 @@
 import { PrismaClient } from '@prisma/client';
 
-const primsa = new PrismaClient();
+const prisma = new PrismaClient();
 
 // 👉 CREATE
 async function createUser() {
-  const user = await primsa.user.create({
+  const user = await prisma.user.create({
     data: {
       username: 'Harsh',
       age: 22,
@@ -20,17 +20,25 @@ async function createUser() {
 
 // 👉 READ
 async function getUsers() {
-  const users = await primsa.user.findMany({ include: { todo: true } });
+  const users = await prisma.user.findMany({ include: { todo: true } });
 
   console.dir(users, { depth: null });
 }
 
 // 👉 UPDATE
 async function updateTodo() {
-  const todo = await primsa.todo.update({
+  const todo = await prisma.todo.update({
     where: { id: 1 },
     data: { status: true },
   });
 
   console.log('Updated Todo:', todo);
+}
+
+// 👉 DELETE
+async function deleteUser() {
+  const user = await prisma.user.delete({
+    where: { id: 1 },
+  });
+  console.log('Deleted User:', user);
 }
