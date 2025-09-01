@@ -42,3 +42,14 @@ async function deleteUser() {
   });
   console.log('Deleted User:', user);
 }
+
+async function main() {
+  // createUser();
+  // getUsers();
+  // updateTodo();
+  // deleteUser();
+}
+
+main().finally(async () => {
+  await prisma.$disconnect();
+});
