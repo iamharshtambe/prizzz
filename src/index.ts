@@ -24,3 +24,13 @@ async function getUsers() {
 
   console.dir(users, { depth: null });
 }
+
+// 👉 UPDATE
+async function updateTodo() {
+  const todo = await primsa.todo.update({
+    where: { id: 1 },
+    data: { status: true },
+  });
+
+  console.log('Updated Todo:', todo);
+}
