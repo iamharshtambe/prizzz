@@ -10,9 +10,8 @@ datasource db {
 model User {
   id       Int    @id @default(autoincrement())
   username String @unique
-  password String
   age      Int
-  todos    Todo[]
+  todo     Todo[]
 }
 
 model Todo {
