@@ -17,3 +17,10 @@ async function createUser() {
 
   console.log('Created User:', user);
 }
+
+// 👉 READ
+async function getUsers() {
+  const users = await primsa.user.findMany({ include: { todo: true } });
+
+  console.dir(users, { depth: null });
+}
